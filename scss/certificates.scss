@@ -1,0 +1,37 @@
+*{
+    outline: none;
+}
+
+body {
+    background-image: url("../img/16.jpg");
+    background-size: cover;
+    // background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(194, 189, 186);
+    .certificate {
+        position: relative;
+        width: 60%;
+        margin: 20px auto;
+        img {
+            width: 100%;
+        }
+        #x{
+            width: 50px;
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        .certificate{
+            width: 90%;
+        }
+    }
+}

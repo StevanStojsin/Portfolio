@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stevan Stojšin | Portfolio</title>
+    <link rel="shortcut icon" href="img/s.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <div class="picture">
+                <img src="img/300px.png" alt="">
+            </div>
+            <div class="basic-info">
+                <h1>Stevan Stojšin</h1>
+                <p>Country: Serbia</p>
+                <p>City: Čurug</p>
+                <p>Street address: Sremska 30</p>
+                <p>Born: 10.11.1988</p>
+                <h4>Front-End Web Developer</h4>
+            </div>
+        </section>
+        <section id="certificates">
+            <h3>Certificates</h3>
+            <div class="container">
+                <figure class="order4 certificate">
+                    <figcaption>Osnove Web Programiranja</figcaption>
+                    <a href="osnove-web.html"><img src="img/certificates/web.png" alt=""></a>
+                </figure>
+                <figure class="certificate">
+                    <figcaption>Osnove Programiranja</figcaption>
+                    <!-- <img src="img/certificates/osnove.png" alt=""> -->
+                    <a href="osnove.html"><img src="img/certificates/osnove.png" alt=""></a>
+                </figure>
+                <figure class="certificate">
+                    <figcaption>Front-End Web Development</figcaption>
+                    <!-- <img src="img/certificates/front-end.png" alt=""> -->
+                    <a href="front-end.html"><img src="img/certificates/front-end.png" alt=""></a>
+                </figure>
+                <figure class="certificate">
+                    <figcaption>Grafički Dizajn</figcaption>
+                    <!-- <img src="img/certificates/graficki.png" alt=""> -->
+                    <a href="graficki.html"><img src="img/certificates/graficki.png" alt=""></a>
+                </figure>
+            </div>
+        </section>
+        <section id="projects">
+            <h3>My Projects</h3>
+            <div class="projects-items">
+                <figure>
+                    <figcaption>Slađana Masaže</figcaption>
+                    <a href="https://sladjana-masaze.github.io/Masaze/" target="_blank">
+                        <img src="img/projects/sladjanamasaze.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <figcaption>Frizerski Salon</figcaption>
+                    <a href="http://snezafrizerka.ga" target="_blank">
+                        <img src="img/projects/salon.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <figcaption>Responsive Single Page</figcaption>
+                    <a href="https://stevanstojsin.github.io/VegaIT/" target="_blank">
+                        <img src="img/projects/Responsive Single Page.png" alt="">
+                    </a>
+                </figure>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <div class="contact-items">
+                <figure>
+                    <img src="img/contacts/telefon.png" alt="">
+                    <figcaption>+381 64/436-00-38</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/contacts/skype-icon.png" alt="">
+                    <figcaption>
+                        stevanstojsin@outlook.com <br> 
+                        (Stevan Stojšin)
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/contacts/mail.png" alt="">
+                    <figcaption>stevanstojsin88@gmail.com</figcaption>
+                </figure>
+            </div>
+        </section>
+        <form action="https://formspree.io/stevanstojsin88@gmail.com" method="POST">
+            <input type="text" name="Ime" minlength="2" maxlength="15" placeholder="Type your name..." required>
+            <br>
+            <input type="text" name="Prezime" minlength="2" maxlength="20" placeholder="Type your last name..." required>
+            <br>
+            <input type="email" name="Email" minlength="8" placeholder="Type your name..." required>
+            <br>
+            <textarea name="Poruka" rows="8" placeholder="Type your message..." required></textarea>
+            <br>
+            <!-- ovaj input ispod komentara sluzi da redirektuje stranicu nakon submit (tu gde pise "Portfolio") -->
+            <input type="hidden" name="_next" value="Portfolio" />
+            <!-- ako necu da redirektuje, onda ovo izmedju ova 2 komentara mogu da izbrisem -->
+            <div class="buttons">
+                <button id="sub" type="submit">Submit</button>
+                <button id="res" type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2018 | Stevan Stojšin</p>
+    </footer>
+</body>
+</html>
